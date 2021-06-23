@@ -4,6 +4,8 @@ using UnityEngine;
 public class Equipment : Item
 {
 	public EquipmentSlot equipSlot;
+	public SkinnedMeshRenderer skinnedMesh;
+	public EquipmentMeshRegion[] coveredMeshRegions;
 
 	public int armorModifier;
 	public int damageModifier;
@@ -24,4 +26,12 @@ public enum EquipmentSlot
 	Weapon,
 	Shield,
 	Feet,
+}
+
+// Corresponds to body blendshapes
+public enum EquipmentMeshRegion
+{
+	Legs,
+	Arms,
+	Torso,
 }
