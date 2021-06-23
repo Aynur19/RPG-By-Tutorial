@@ -2859,6 +2859,7 @@ GameObject:
   - component: {fileID: 633742448}
   - component: {fileID: 633742447}
   - component: {fileID: 633742446}
+  - component: {fileID: 633742452}
   m_Layer: 0
   m_Name: Player2
   m_TagString: Untagged
@@ -2961,6 +2962,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &633742452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 633742445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4dcb67f12521a7489376225b0559387, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &638328393
 GameObject:
   m_ObjectHideFlags: 0
@@ -3614,6 +3627,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3f26483b5565d0042a8923d4763b23ff, type: 3}
       propertyPath: m_Name
       value: Player2 Graphics
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 3f26483b5565d0042a8923d4763b23ff, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 99af3940aafebe241beabc35aa63945e, type: 2}
+    - target: {fileID: 5866666021909216657, guid: 3f26483b5565d0042a8923d4763b23ff, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f26483b5565d0042a8923d4763b23ff, type: 3}
