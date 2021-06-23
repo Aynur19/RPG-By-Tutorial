@@ -3,6 +3,7 @@ using UnityEngine;
 [RequireComponent(typeof(PlayerMotor))]
 public class PlayerController : MonoBehaviour
 {
+	public Interactable focus;
 	public LayerMask movementMask;
 
 	private Camera mainCamera;
@@ -25,6 +26,8 @@ public class PlayerController : MonoBehaviour
 			if (Physics.Raycast(ray, out hit, 100, movementMask))
 			{
 				motor.MoveToPoint(hit.point);
+
+				RemoveFocus();
 			}
 		}
 
@@ -35,7 +38,40 @@ public class PlayerController : MonoBehaviour
 
 			if (Physics.Raycast(ray, out hit, 100))
 			{
+				var interactable = hit.collider.GetComponent<Interactable>();
+
+				if (interactable != null)
+				{
+					SetFocus(interactable);
+				}
 			}
 		}
+	}
+
+	private void SetFocus(Interactable newFocus)
+	{
+		if (newFocus != focus)
+		{
+			if (focus != null)
+			{
+				focus.OnDefocused();
+			}
+
+			focus = newFocus;
+			motor.FollowTarget(focus);
+		}
+
+		focus.OnFocused(transform);
+	}
+
+	private void RemoveFocus()
+	{
+		if (focus != null)
+		{
+			focus.OnDefocused();
+		}
+
+		focus = null;
+		motor.StopFollowingTarget();
 	}
 }
