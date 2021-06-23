@@ -106,15 +106,15 @@ NavMeshSettings:
   m_BuildSettings:
     serializedVersion: 2
     agentTypeID: 0
-    agentRadius: 0.2
+    agentRadius: 0.4
     agentHeight: 2
     agentSlope: 52
-    agentClimb: 0.4
+    agentClimb: 0.5
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
     minRegionArea: 2
     manualCellSize: 0
-    cellSize: 0.06666667
+    cellSize: 0.13333334
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: f522fe4640fba884e84153da2cbee1c7, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: bdd24ae37bd0e2c4b9e34e44432358aa, type: 2}
 --- !u!1001 &11802477
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2769,6 +2769,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1502916415}
     m_Modifications:
+    - target: {fileID: 1965298793887094, guid: 43cbaea1607bc9248aedcee481f27809, type: 3}
+      propertyPath: m_Name
+      value: Campfire
+      objectReference: {fileID: 0}
     - target: {fileID: 4478724532440024, guid: 43cbaea1607bc9248aedcee481f27809, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -2801,26 +2805,20 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0.013317396
       objectReference: {fileID: 0}
+    - target: {fileID: 4478724532440024, guid: 43cbaea1607bc9248aedcee481f27809, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -2.052
+      objectReference: {fileID: 0}
+    - target: {fileID: 4478724532440024, guid: 43cbaea1607bc9248aedcee481f27809, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -0.24700001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4478724532440024, guid: 43cbaea1607bc9248aedcee481f27809, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 1.531
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43cbaea1607bc9248aedcee481f27809, type: 3}
---- !u!1 &1204915409 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1965298793887094, guid: 43cbaea1607bc9248aedcee481f27809, type: 3}
-  m_PrefabInstance: {fileID: 1204915408}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &1204915410
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1204915409}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0.44, z: 0}
 --- !u!1001 &1276099061
 PrefabInstance:
   m_ObjectHideFlags: 0
