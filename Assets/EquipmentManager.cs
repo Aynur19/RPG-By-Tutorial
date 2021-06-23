@@ -12,7 +12,7 @@ public class EquipmentManager : MonoBehaviour
 	#endregion
 
 	public delegate void OnEquipmentChanged(Equipment newItem, Equipment oldItem);
-	public OnEquipmentChanged onEquipmentChanged;
+	public OnEquipmentChanged onEquipmentChangedCallback;
 	public SkinnedMeshRenderer targetSkinnedMesh;
 	public Equipment[] defaultItems;
 
@@ -36,7 +36,7 @@ public class EquipmentManager : MonoBehaviour
 		var slotIndex = (int)newItem.equipSlot;
 		Equipment oldItem = Unequip(slotIndex);
 
-		onEquipmentChanged?.Invoke(newItem, oldItem);
+		onEquipmentChangedCallback?.Invoke(newItem, oldItem);
 		SetEquipmentBlendShapes(newItem, 100);
 
 		currentEquipment[slotIndex] = newItem;
@@ -64,7 +64,7 @@ public class EquipmentManager : MonoBehaviour
 
 			currentEquipment[slotIndex] = null;
 	
-			onEquipmentChanged?.Invoke(null, oldItem);
+			onEquipmentChangedCallback?.Invoke(null, oldItem);
 
 			return oldItem;
 		}

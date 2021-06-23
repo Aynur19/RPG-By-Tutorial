@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8686109567134326562}
   - component: {fileID: 3655723150025957019}
   m_Layer: 0
-  m_Name: Helmet
+  m_Name: Helmet preview
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
