@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -9,11 +7,12 @@ public class EnemyController : MonoBehaviour
 
 	private Transform target;
 	private NavMeshAgent agent;
-
+	private CharacterCombat combat;
 	private void Start()
 	{
 		target = PlayerManager.instance.player.transform;
 		agent = GetComponent<NavMeshAgent>();
+		combat = GetComponent<CharacterCombat>();
 	}
 
 	private void Update()
@@ -25,8 +24,11 @@ public class EnemyController : MonoBehaviour
 
 			if (distance <= agent.stoppingDistance)
 			{
-				//Attack the target
-				//Face the target
+				var targetStats = target.GetComponent<CharacterStats>();
+				if (targetStats != null)
+				{
+					combat.Attack(targetStats);
+				}
 				FaceTarget();
 			}
 		}
