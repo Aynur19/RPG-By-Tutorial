@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &518658277928397305
+--- !u!1 &8749245714771850984
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,8 +8,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 769387492709015315}
-  - component: {fileID: 3614216742294944094}
+  - component: {fileID: 8427463825219239938}
+  - component: {fileID: 5508309788626986575}
   m_Layer: 0
   m_Name: Hair
   m_TagString: Untagged
@@ -17,13 +17,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &769387492709015315
+--- !u!4 &8427463825219239938
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 518658277928397305}
+  m_GameObject: {fileID: 8749245714771850984}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0, y: -0.0033217564, z: 0}
   m_LocalScale: {x: 100, y: 100, z: 100}
@@ -31,13 +31,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!137 &3614216742294944094
+--- !u!137 &5508309788626986575
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 518658277928397305}
+  m_GameObject: {fileID: 8749245714771850984}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -50,7 +50,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -4288583467269203127, guid: a6ed6e33338033a47af043bb19e8e801, type: 3}
+  - {fileID: 2100000, guid: 05a71a29fe6f22a4ca972e11f5a7f95a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -75,7 +75,7 @@ SkinnedMeshRenderer:
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
   m_SkinnedMotionVectors: 1
-  m_Mesh: {fileID: -3178576508544696699, guid: a6ed6e33338033a47af043bb19e8e801, type: 3}
+  m_Mesh: {fileID: -3178576508544696699, guid: e19393d634102d6498bea53215fc823c, type: 3}
   m_Bones:
   - {fileID: 0}
   - {fileID: 0}

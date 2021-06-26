@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4479361596591462438
+--- !u!1 &1808940370509062854
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,22 +8,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 9123726464411622717}
-  - component: {fileID: 3126030721972769988}
+  - component: {fileID: 6462308039277406173}
+  - component: {fileID: 887950663054994980}
   m_Layer: 0
-  m_Name: Shoes
+  m_Name: Default Shoes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &9123726464411622717
+--- !u!4 &6462308039277406173
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4479361596591462438}
+  m_GameObject: {fileID: 1808940370509062854}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0, y: -0.0033217564, z: 0}
   m_LocalScale: {x: 100, y: 100, z: 100}
@@ -31,13 +31,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!137 &3126030721972769988
+--- !u!137 &887950663054994980
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4479361596591462438}
+  m_GameObject: {fileID: 1808940370509062854}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1

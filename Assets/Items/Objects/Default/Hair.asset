@@ -16,7 +16,7 @@ MonoBehaviour:
   icon: {fileID: 0}
   isDefaultItem: 1
   equipSlot: 0
-  skinnedMesh: {fileID: 3614216742294944094, guid: ad3a87aae0cbd2840bcaf764f11b7678, type: 3}
+  skinnedMesh: {fileID: 1726138546830249741, guid: de9d0223957619b4aa7af605501109a3, type: 3}
   coveredMeshRegions: 
   armorModifier: 0
   damageModifier: 0

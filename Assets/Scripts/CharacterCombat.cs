@@ -28,11 +28,7 @@ public class CharacterCombat : MonoBehaviour
 		{
 			StartCoroutine(DoDamage(targetStats, attackDelay));
 
-			if (OnAttack != null)
-			{
-				OnAttack();
-			}
-
+			OnAttack?.Invoke();
 			attackCooldown = 1 / attackSpeed;
 		}
 	}
