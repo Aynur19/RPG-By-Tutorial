@@ -15,6 +15,8 @@ public class EquipmentManager : MonoBehaviour
 	public OnEquipmentChanged onEquipmentChangedCallback;
 	public SkinnedMeshRenderer targetSkinnedMesh;
 	public Equipment[] defaultItems;
+	public Transform Sword;
+	public Transform Shield;
 
 	private Equipment[] currentEquipment;
 	private SkinnedMeshRenderer[] currentSkinnedMeshes;
@@ -41,12 +43,32 @@ public class EquipmentManager : MonoBehaviour
 
 		currentEquipment[slotIndex] = newItem;
 		var newSkinnedMesh = Instantiate<SkinnedMeshRenderer>(newItem.skinnedMesh);
-		newSkinnedMesh.transform.parent = targetSkinnedMesh.transform;
-
-		newSkinnedMesh.bones = targetSkinnedMesh.bones;
-		newSkinnedMesh.rootBone = targetSkinnedMesh.rootBone;
 
 		currentSkinnedMeshes[slotIndex] = newSkinnedMesh;
+
+		if (newItem != null && newItem.equipSlot == EquipmentSlot.Weapon)
+		{
+			newSkinnedMesh.rootBone = Sword;
+		}
+		else if (newItem != null && newItem.equipSlot == EquipmentSlot.Shield)
+		{
+			newSkinnedMesh.rootBone = Shield;
+			Shield.Rotate(new Vector3(0, 0, -60));
+			//newSkinnedMesh.GetComponentInParent<Transform>().Rotate(new Vector3(0, 0, -60));
+		}
+		else
+		{
+			newSkinnedMesh.transform.parent = targetSkinnedMesh.transform;
+			newSkinnedMesh.bones = targetSkinnedMesh.bones;
+			newSkinnedMesh.rootBone = targetSkinnedMesh.rootBone;
+		}
+
+		//newSkinnedMesh.transform.parent = targetSkinnedMesh.transform;
+
+		//newSkinnedMesh.bones = targetSkinnedMesh.bones;
+		//newSkinnedMesh.rootBone = targetSkinnedMesh.rootBone;
+
+		//currentSkinnedMeshes[slotIndex] = newSkinnedMesh;
 	}
 
 	public Equipment Unequip(int slotIndex)
