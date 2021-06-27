@@ -22,6 +22,7 @@ public class HealthUI : MonoBehaviour
 			{
 				ui = Instantiate(uiPrefab, canvas.transform).transform;
 				healthSlider = ui.GetChild(0).GetComponent<Image>();
+				ui.gameObject.SetActive(false);
 
 				break;
 			}
@@ -51,7 +52,7 @@ public class HealthUI : MonoBehaviour
 			ui.gameObject.SetActive(true);
 			lastMadeVisibleTime = Time.time;
 
-			var healthPercent = currentHealth / (float)maxHeath;
+			var healthPercent = (float)currentHealth / maxHeath;
 			healthSlider.fillAmount = healthPercent;
 
 			if (currentHealth <= 0)

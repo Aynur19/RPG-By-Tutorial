@@ -5,14 +5,14 @@ using UnityEngine.AI;
 public class CharacterAnimator : MonoBehaviour
 {
 	public AnimationClip replaceableAttackAnim;
-	public AnimationClip[] defaultAttackAnimSet; 
+	public AnimationClip[] defaultAttackAnimSet;
+	public AnimatorOverrideController overrideController;
 
 	private const float locomotionAnimationSmoothTime = 0.1f;
 	private NavMeshAgent agent;
 
 	protected Animator animator;
 	protected CharacterCombat combat;
-	protected AnimatorOverrideController overrideController;
 	protected AnimationClip[] currentAttackAnimSet;
 
 	protected virtual void Start()
@@ -21,7 +21,10 @@ public class CharacterAnimator : MonoBehaviour
 		animator = GetComponentInChildren<Animator>();
 		combat = GetComponent<CharacterCombat>();
 
-		overrideController = new AnimatorOverrideController(animator.runtimeAnimatorController);
+		if (overrideController == null)
+		{
+			overrideController = new AnimatorOverrideController(animator.runtimeAnimatorController);
+		}
 		animator.runtimeAnimatorController = overrideController;
 
 		currentAttackAnimSet = defaultAttackAnimSet;
