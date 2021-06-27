@@ -8891,60 +8891,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!137 &507116227503390255
-SkinnedMeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6171660983753208710}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 3
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: -1444460858095362738, guid: e19393d634102d6498bea53215fc823c, type: 3}
-  - {fileID: -4973734387028869240, guid: e19393d634102d6498bea53215fc823c, type: 3}
-  - {fileID: 3266693337043582393, guid: e19393d634102d6498bea53215fc823c, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  serializedVersion: 2
-  m_Quality: 0
-  m_UpdateWhenOffscreen: 0
-  m_SkinnedMotionVectors: 1
-  m_Mesh: {fileID: -1272481795433867914, guid: e19393d634102d6498bea53215fc823c, type: 3}
-  m_Bones: []
-  m_BlendShapeWeights: []
-  m_RootBone: {fileID: 0}
-  m_AABB:
-    m_Center: {x: 0, y: -0.000021976186, z: -0.00018213084}
-    m_Extent: {x: 0.0024339058, y: 0.00068030367, z: 0.003061391}
-  m_DirtyAABB: 0
 --- !u!1 &650786218574774109
 GameObject:
   m_ObjectHideFlags: 0
@@ -9447,7 +9393,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4733013291540696680}
-  - component: {fileID: 8204713830374101313}
   m_Layer: 0
   m_Name: Sword
   m_TagString: Untagged
@@ -10032,7 +9977,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1026552725496456587}
-  - component: {fileID: 507116227503390255}
   m_Layer: 0
   m_Name: Shield
   m_TagString: Untagged
@@ -10642,61 +10586,6 @@ Transform:
   m_Father: {fileID: 8648134118039623209}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!137 &8204713830374101313
-SkinnedMeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2784821984354979670}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 3
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: -4586614339271560772, guid: e19393d634102d6498bea53215fc823c, type: 3}
-  - {fileID: 7105848265697138794, guid: e19393d634102d6498bea53215fc823c, type: 3}
-  - {fileID: 5988347114677481029, guid: e19393d634102d6498bea53215fc823c, type: 3}
-  - {fileID: -4973734387028869240, guid: e19393d634102d6498bea53215fc823c, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  serializedVersion: 2
-  m_Quality: 0
-  m_UpdateWhenOffscreen: 0
-  m_SkinnedMotionVectors: 1
-  m_Mesh: {fileID: 4686849319519084627, guid: e19393d634102d6498bea53215fc823c, type: 3}
-  m_Bones: []
-  m_BlendShapeWeights: []
-  m_RootBone: {fileID: 0}
-  m_AABB:
-    m_Center: {x: -1.4551915e-10, y: -0.003456176, z: 0}
-    m_Extent: {x: 0.0002101951, y: 0.004370489, z: 0.0012895463}
-  m_DirtyAABB: 0
 --- !u!4 &8248818860788936255
 Transform:
   m_ObjectHideFlags: 0
