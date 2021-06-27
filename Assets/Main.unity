@@ -598,6 +598,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &102343626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 102343624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ab5d4e7ba419964ab91ae5e4fa550f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  combat: {fileID: 1316502682}
 --- !u!1 &106566633
 GameObject:
   m_ObjectHideFlags: 0
@@ -10046,6 +10059,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8009389834366018953}
   - component: {fileID: 7236371125858647860}
+  - component: {fileID: 7236371125858647861}
   m_Layer: 0
   m_Name: Player GFX
   m_TagString: Untagged
@@ -10072,6 +10086,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7236371125858647861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7236371125858647859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ab5d4e7ba419964ab91ae5e4fa550f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  combat: {fileID: 1075333068}
 --- !u!4 &7278637489328959060
 Transform:
   m_ObjectHideFlags: 0
